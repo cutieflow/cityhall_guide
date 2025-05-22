@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="mb-4">フロア一覧</h1>
+  <div class="list-group">
+    {% for floor in floors %}
+      <a href="{{ url_for('floor_detail', floor_id=floor.id) }}" class="list-group-item list-group-item-action">
+        {{ floor.name }}
+      </a>
+    {% endfor %}
+  </div>
+{% endblock %}

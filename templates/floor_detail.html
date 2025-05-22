@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ floor.name }}</h1>
+  <p>{{ floor.description }}</p>
+  <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">戻る</a>
+{% endblock %}

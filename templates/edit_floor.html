@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="mb-4">フロア編集</h1>
+
+  <form method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">フロア名</label>
+      <input type="text" class="form-control" id="name" name="name" value="{{ floor.name }}" required>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">説明</label>
+      <textarea class="form-control" id="description" name="description" rows="3">{{ floor.description }}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">更新</button>
+  </form>
+
+  <a href="{{ url_for('admin') }}" class="btn btn-secondary mt-3">戻る</a>
+{% endblock %}

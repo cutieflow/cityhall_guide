@@ -1,0 +1,19 @@
+@media (min-width: 576px) {
+
+    td>a,
+    td>form {
+        display: inline-block;
+        width: auto;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    td>a,
+    td>form {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
