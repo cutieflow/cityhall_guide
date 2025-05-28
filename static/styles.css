@@ -3,7 +3,7 @@
     td>a,
     td>form {
         display: inline-block;
-        width: auto;
+        width: 80;
         margin-right: 0.5rem;
     }
 }
@@ -13,7 +13,7 @@
     td>a,
     td>form {
         display: block;
-        width: 100%;
+        width: 80%;
         margin-bottom: 0.5rem;
     }
 }

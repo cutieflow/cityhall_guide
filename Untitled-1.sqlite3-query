@@ -1,0 +1,3 @@
+-- database: /Users/father-m1/Documents/python/cityhall_guide/cityhall.db
+
+SELECT * FROM floors;
